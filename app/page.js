@@ -1,5 +1,6 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +16,7 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} flex flex-col items-center justify-center min-h-screen p-8 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500`}
+      className={`${geistSans.variable} ${geistMono.variable} flex flex-col items-center justify-center min-h-screen p-8 bg-gradient-to-r from-green-300 via-brown-500 to-red-500`}
     >
       <header className="text-center mb-16">
         {/* <Image
@@ -30,9 +31,11 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col items-center gap-8">
+       <Link href="/getstarted">
         <button className="bg-white text-purple-500 font-semibold py-2 px-4 rounded-full shadow-lg hover:bg-purple-100 transition">
           Get Started
         </button>
+        </Link> 
         <button className="bg-white text-purple-500 font-semibold py-2 px-4 rounded-full shadow-lg hover:bg-purple-100 transition">
           Explore Playlists
         </button>
