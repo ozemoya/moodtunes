@@ -3,6 +3,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 import Image from 'next/image';
 export default function AppNavbar() {
   return (
+    //Watch Arcane
     <Navbar shouldHideOnScroll className="h-8 ">
       <Image  
         src="/Kumomi_logo.png"
