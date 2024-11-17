@@ -30,7 +30,7 @@ export default function AppNavbar() {
           <Link href="/signin">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="/signup" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
@@ -38,4 +38,4 @@ export default function AppNavbar() {
     </Navbar>
   );
 }
-
+//why is the signup one so diff?
