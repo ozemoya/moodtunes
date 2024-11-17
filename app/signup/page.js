@@ -6,7 +6,7 @@ import localFont from "@next/font/local"; // Import localFont function
 export default function SignUp() {
   return (
     <div
-      className='flex flex-col items-center justify-center min-h-screen p-8 bg-gradient-to-r from-blue-500 via-blue-500 to-blue-500 animate-gradient'
+      className=' flex flex-col items-center justify-center min-h-screen p-8 bg-gradient-to-r from-blue-500 via-blue-500 to-blue-500 animate-gradient'
     >
       <header className="text-center mb-16">
         <Image className="mx-auto"
