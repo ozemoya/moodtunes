@@ -4,7 +4,7 @@ const { randomBytes } = require("node:crypto")
 const querystring = require('node:querystring')
 
 let client_id = process.env.SPOTIFY_CLIENT_ID
-let redirect_uri = 'http://localhost:3000/api/callback'
+let redirect_uri = 'http://localhost:3000/api/spotify/auth/callback'
 let scopes = 'user-read-private user-read-email user-read-recently-played user-read-playback-state user-read-currently-playing'
 
 export async function GET(){
