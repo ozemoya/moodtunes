@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation"
 const querystring = require('node:querystring')
 
-const redirect_uri = 'http://localhost:3000/api/callback'
+const redirect_uri = 'http://localhost:3000/api/spotify/auth/callback'
 const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID
 const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET 
 
