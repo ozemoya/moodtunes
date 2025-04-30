@@ -11,7 +11,7 @@ const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET
  * Sends a valid refresh token to spotify in order to get our access token to authorize everything else. This function should be called and it's value be stored before fetching from the spotify API.
  * @returns access_token
  */
-export async function getAccessToken(refresh_token){
+export async function getAccessToken(){
     
     //eventually will take a refresh token as a parameter, but for now just uses the refresh token saved in our environment variables.
 
@@ -23,7 +23,7 @@ export async function getAccessToken(refresh_token){
         method: "POST",
         body: new URLSearchParams({
             grant_type: 'refresh_token',
-            refresh_token: refresh_token,
+            refresh_token: SPOTIFY_REFRESH_TOKEN,
             client_id: SPOTIFY_CLIENT_ID
         }),
         headers: {
@@ -44,7 +44,7 @@ export async function getAccessToken(refresh_token){
  */
 export async function getCurrentlyPlaying(){
     
-    let access_token = await getAccessToken(SPOTIFY_REFRESH_TOKEN)
+    let access_token = await getAccessToken()
 
     let response = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
         headers: {

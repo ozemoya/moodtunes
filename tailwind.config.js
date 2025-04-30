@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'sky-pattern' : "url('../public/othsky.png')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
