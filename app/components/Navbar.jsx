@@ -3,7 +3,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 import Image from 'next/image';
 export default function AppNavbar() {
   return (
-    <div className="flex-col h-screen bg-slate-600">
+    <div className="h-screen bg-slate-600">
       <Image  
             src="/Kumomi_logo.png"
             alt="Kumomi logo"
@@ -14,7 +14,7 @@ export default function AppNavbar() {
       />
       
       <div>
-        <ul className="flex-col justify-center text-xl space-y-4 px-10"> 
+        <ul className="flex-col justify-center text-xl space-y-4 px-5"> 
           <li className="flex gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -56,7 +56,14 @@ export default function AppNavbar() {
           </li>
         </ul>
       </div>
+      <Image
+      src="/Bottom_Clouds.png"
+
+            width={181}
+            height={30}
+            className="absolute bottom-0 left-0"
+      />
+
     </div>
   );
 }
-//why is the signup one so diff?

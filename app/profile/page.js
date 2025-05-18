@@ -3,10 +3,22 @@ import Image from "next/image";
 import AppNavbar from '../components/Navbar.jsx';
 
 export default function Profile() {
-    //Completely re-do the entire navbar from scratch, it doesn't even exist on it's own
-    //Who ever created that navbar gotta die 
   return (
+    <div className="flex flex-row ">
+          <div className="justify-items-center w-50">
+          <AppNavbar/>
+          </div>
+          <div className="bg-blue-200 w-screen px-2 text-black">
+            PROFILE PAGE
+            Use this div to fill page
+            <div>
+              PROFILE PICTURE
+            </div>
+            <div>
+              WORK ON FIGMA TO GET A PROFILE DESIGN
+            </div>
 
-    <AppNavbar/>
+          </div>
+    </div>
   )
 }
