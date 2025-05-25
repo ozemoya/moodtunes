@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'sky_blue': "#4C8ACC",
       },
       keyframes: {
         gradient: {

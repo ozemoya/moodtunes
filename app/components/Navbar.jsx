@@ -3,11 +3,11 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 import Image from 'next/image';
 export default function AppNavbar() {
   return (
-    <div className="h-screen bg-sky-500">
+    <div className="h-screen bg-sky_blue">
       <Image  
             src="/Kumomi_logo.png"
             alt="Kumomi logo"
-            width={130}
+            width={140}
             height={30}
             priority
             className="mx-auto flex py-5"
