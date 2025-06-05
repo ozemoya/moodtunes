@@ -10,8 +10,8 @@ export default function Profile() {
       </div>
       <div className="bg-blue-200 w-screen px-2 text-black flex justify-center items-center min-h-screen">
         {/* Add your profile content here */}
+        Jargon
       </div>
     </div>
   );
->>>>>>> ed4a660936c54898d91315324b0832d89a42c64b
 }
