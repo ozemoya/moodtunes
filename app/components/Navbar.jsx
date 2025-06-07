@@ -3,7 +3,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 import Image from 'next/image';
 export default function AppNavbar() {
   return (
-    <div className="h-screen bg-sky_blue">
+    <div className="h-screen bg-sky_blue border-r-2 border-white-100">
       <Image  
             src="/Kumomi_logo.png"
             alt="Kumomi logo"
