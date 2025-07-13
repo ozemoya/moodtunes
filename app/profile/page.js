@@ -65,16 +65,16 @@ export default function Profile() {
             <div className="col-span-12 lg:col-span-7">
               {/* Navigation Tabs */}
               <div className="flex border-b border-white/20 mb-6">
-                <button onClick={() => feedChange('posts')}border-b-2  className="px-6 py-3 text-white font-semibold border-white transition-colors duration-300">
+                <button onClick={() => feedChange('posts')} className="px-6 py-3 text-slate-300 hover:text-white transition-colors duration-300 border-b border-white/0 hover:border-white">
                   Posts
                 </button>
-                <button onClick={() => feedChange('music')} className="px-6 py-3 text-slate-300 hover:text-white transition-colors duration-300">
+                <button onClick={() => feedChange('music')} className="px-6 py-3 text-slate-300 hover:text-white transition-colors duration-300 border-b border-white/0 hover:border-white">
                   Music
                 </button>
-                <button onClick={() => feedChange('playlists')} className="px-6 py-3 text-slate-300 hover:text-white transition-colors duration-300">
+                <button onClick={() => feedChange('playlists')} className="px-6 py-3 text-slate-300 hover:text-white transition-colors duration-300 border-b border-white/0 hover:border-white">
                   Playlists
                 </button>
-                <button onClick={() => feedChange('likes')} className="px-6 py-3 text-slate-300 hover:text-white transition-colors duration-300">
+                <button onClick={() => feedChange('likes')} className="px-6 py-3 text-slate-300 hover:text-white transition-colors duration-300 border-b border-white/0 hover:border-white">
                   Likes
                 </button>
               </div>
