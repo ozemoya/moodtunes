@@ -81,7 +81,7 @@ export default function Profile() {
 
               {/* Posts Feed, probably replace Feed with a component*/}
               <div>
-                <div className="flex flex-col gap-6">
+                <div className="overflow-y-auto max-h-[550px] flex flex-col gap-6">
                   {/* Posts */}
                   {activeFeed === 'posts' && (
                       <div>
