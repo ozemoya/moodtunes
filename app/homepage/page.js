@@ -17,7 +17,7 @@ export default function Homepage() {
         <div className="relative z-10 grid grid-cols-12 gap-8">
           
           {/* Middle Column: Post Feed */}
-          <div className="overflow-y-auto  max-h-[830px] col-span-12 lg:col-span-7 flex flex-col gap-6">
+          <div className="overflow-y-auto  max-h-[830px] col-span-12 lg:col-span-9 flex flex-col gap-6">
             {/* Post 1 */}
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
               <div className="flex items-start gap-4">
@@ -230,7 +230,7 @@ export default function Homepage() {
           </div>
 
           {/* Right Column: Widgets */}
-          <div className="col-span-12 lg:col-span-5 flex flex-col gap-8">
+          <div className="col-span-12 lg:col-span-3 flex flex-col gap-8">
             {/* Recommended Songs */}
             <div className="group bg-white/10 backdrop-blur-md rounded-2xl px-4 py-2 border border-white/20">
               <h3 className="font-bold text-white text-xl mb">Recommended Songs</h3>
