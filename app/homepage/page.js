@@ -17,7 +17,7 @@ export default function Homepage() {
         <div className="relative z-10 grid grid-cols-12 gap-8">
           
           {/* Middle Column: Post Feed */}
-          <div className="overflow-y-auto  max-h-[550px] col-span-12 lg:col-span-7 flex flex-col gap-6">
+          <div className="overflow-y-auto  max-h-[830px] col-span-12 lg:col-span-7 flex flex-col gap-6">
             {/* Post 1 */}
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
               <div className="flex items-start gap-4">
@@ -232,9 +232,9 @@ export default function Homepage() {
           {/* Right Column: Widgets */}
           <div className="col-span-12 lg:col-span-5 flex flex-col gap-8">
             {/* Recommended Songs */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl px-4 py-2 border border-white/20">
-              <h3 className="font-bold text-white text-xl mb-4">Recommended Songs</h3>
-              <div className="flex flex-col gap-4">
+            <div className="group bg-white/10 backdrop-blur-md rounded-2xl px-4 py-2 border border-white/20">
+              <h3 className="font-bold text-white text-xl mb">Recommended Songs</h3>
+              <div className="hidden group-hover:block flex flex-col gap-4">
                 {/* Song 1 */}
                 <div className="flex items-center gap-4">
                   <img src="/song1.png" alt="Song 1" className="w-12 h-12 rounded-lg object-cover" />
@@ -263,9 +263,9 @@ export default function Homepage() {
             </div>
 
             {/* Friends Listening */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl px-4 py-2 border border-white/20">
-              <h3 className="font-bold text-white text-xl mb-4">Friends Listening</h3>
-              <div className="flex flex-col gap-4">
+            <div className="group bg-white/10 backdrop-blur-md rounded-2xl px-4 py-2 border border-white/20">
+              <h3 className="font-bold text-white text-xl">Friends Listening</h3>
+              <div className="hidden group-hover:block flex flex-col gap-4">
                 {/* Friend 1 */}
                 <div className="flex items-center gap-4">
                   <Image src="/Kumomi_logo.png" alt="Friend 1" width={40} height={40} className="rounded-full" />
@@ -284,39 +284,39 @@ export default function Homepage() {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Bottom Row: Discover Friends Section */}
-          <div className="col-span-12">
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl px-4 py-2 border border-white/20">
-              <h3 className="font-bold text-white text-2xl mb-2">Discover Friends</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* Friend Card 1 */}
-                <div className="bg-white/10 rounded-xl p-4 text-center hover:bg-white/20 transition-colors duration-300 flex flex-col items-center justify-center">
-                  <Image src="/Kumomi_logo.png" alt="Friend 1" width={80} height={80} className="rounded-full mb-4" />
-                  <h4 className="font-bold text-white text-lg">Frank</h4>
-                  <p className="text-slate-300 text-sm mb-4">@frankocean</p>
-                  <button className="bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-6 rounded-full text-sm transition-colors duration-300">
-                    Follow
-                  </button>
-                </div>
-                {/* Friend Card 2 */}
-                <div className="bg-white/10 rounded-xl p-4 text-center hover:bg-white/20 transition-colors duration-300 flex flex-col items-center justify-center">
-                  <Image src="/Kumomi_logo.png" alt="Friend 2" width={80} height={80} className="rounded-full mb-4" />
-                  <h4 className="font-bold text-white text-lg">Tyler</h4>
-                  <p className="text-slate-300 text-sm mb-4">@tylerthecreator</p>
-                  <button className="bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-6 rounded-full text-sm transition-colors duration-300">
-                    Follow
-                  </button>
-                </div>
-                {/* Friend Card 3 */}
-                <div className="bg-white/10 rounded-xl p-4 text-center hover:bg-white/20 transition-colors duration-300 flex flex-col items-center justify-center">
-                  <Image src="/Kumomi_logo.png" alt="Friend 3" width={80} height={80} className="rounded-full mb-4" />
-                  <h4 className="font-bold text-white text-lg">SZA</h4>
-                  <p className="text-slate-300 text-sm mb-4">@sza</p>
-                  <button className="bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-6 rounded-full text-sm transition-colors duration-300">
-                    Follow
-                  </button>
+            {/* Bottom Row: Discover Friends Section */}
+            <div className="col-span-12">
+              <div className="group bg-white/10 backdrop-blur-md rounded-2xl px-4 py-2 border border-white/20">
+                <h3 className="font-bold text-white text-xl">Discover Friends</h3>
+                <div className="hidden group-hover:block grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {/* Friend Card 1 */}
+                  <div className="bg-white/10 rounded-xl p-4 text-center hover:bg-white/20 transition-colors duration-300 flex flex-col items-center justify-center m-4">
+                    <Image src="/Kumomi_logo.png" alt="Friend 1" width={73} height={73} className="rounded-full" />
+                    <h4 className="font-bold text-white text-lg">Frank</h4>
+                    <p className="text-slate-300 text-sm">@frankocean</p>
+                    <button className="bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-6 rounded-full text-sm transition-colors duration-300">
+                      Follow
+                    </button>
+                  </div>
+                  {/* Friend Card 2 */}
+                  <div className="bg-white/10 rounded-xl p-4 text-center hover:bg-white/20 transition-colors duration-300 flex flex-col items-center justify-center m-4">
+                    <Image src="/Kumomi_logo.png" alt="Friend 2" width={73} height={73} className="rounded-full" />
+                    <h4 className="font-bold text-white text-lg">Tyler</h4>
+                    <p className="text-slate-300 text-sm">@tylerthecreator</p>
+                    <button className="bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-6 rounded-full text-sm transition-colors duration-300">
+                      Follow
+                    </button>
+                  </div>
+                  {/* Friend Card 3 */}
+                  <div className="bg-white/10 rounded-xl p-4 text-center hover:bg-white/20 transition-colors duration-300 flex flex-col items-center justify-center m-4">
+                    <Image src="/Kumomi_logo.png" alt="Friend 3" width={73} height={73} className="rounded-full" />
+                    <h4 className="font-bold text-white text-lg">SZA</h4>
+                    <p className="text-slate-300 text-sm">@sza</p>
+                    <button className="bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-6 rounded-full text-sm transition-colors duration-300">
+                      Follow
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
