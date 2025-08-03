@@ -1,8 +1,13 @@
+"use client";
+import { useState } from 'react';
 import React from "react";
 import AppNavbar from "../components/Navbar.jsx";
 import Image from "next/image";
 
 export default function Homepage() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-sky-400 to-sky-600 font-sans">
       <AppNavbar />
@@ -325,10 +330,35 @@ export default function Homepage() {
 
         {/* Floating Action Button */}
         <div className="fixed bottom-8 right-8 z-20">
-          <button className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full shadow-xl hover:shadow-2xl text-white text-2xl hover:scale-110 transition-all duration-300">
+          <button onClick ={() => setIsPopupOpen(true)} className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full shadow-xl hover:shadow-2xl text-white text-2xl hover:scale-110 transition-all duration-300">
             +
           </button>
         </div>
+        {/*Post Area*/}
+        {isPopupOpen &&(
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="containter bg-blue-500 p-8 rounded-2xl max-w-xl w-full">
+              <button onClick={() => setIsPopupOpen(false)} className="rounded-3xl p-1 bg-white w-6">
+                <svg
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 20L4 4.00003M20 4L4.00002 20" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g>
+                </svg>
+              </button>
+              <div className="text-blue-300 py-3">
+                What's new?
+              </div>
+              <hr></hr>
+              <div className="flex py-2">
+                <div className="text-xs">
+                  This would be the place where the icons for adding pictures, videos, etc would be.
+                </div>
+                <button className="my-2 rounded-3xl bg-blue-400 p-2 px-3 font-bold">
+                  Post
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
       </main>
     </div>
   );
